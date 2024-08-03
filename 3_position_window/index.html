@@ -11,20 +11,15 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Open a folder chooser</title>
+    <title>Position Window</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Open a folder chooser</h1>
-      <!-- buton that opens the folder chooser -->
-      <button id="choose-folder">Choose a folder</button> 
-      <!-- input that shows the selected folder path -->
-      <input id="folder-path" disabled />
-      <!-- buttons to clear the selected folder path -->
-      <button id="clear-folder">Cancel</button>
-      <!-- button to start processing the selected folder -->
-      <button id="start-processing">Start Processing</button>
+      <h1>Position Window</h1>
+      <p>
+        The window will reopen in the last position it was before been closed
+      </p>
     </div>
 
     <script src="./renderer.js"></script>
