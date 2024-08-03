@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Open a folder chooser</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Open a folder chooser</h1>
+      <!-- buton that opens the folder chooser -->
+      <button id="choose-folder">Choose a folder</button> 
+      <!-- input that shows the selected folder path -->
+      <input id="folder-path" disabled />
+      <!-- buttons to clear the selected folder path -->
+      <button id="clear-folder">Cancel</button>
+      <!-- button to start processing the selected folder -->
+      <button id="start-processing">Start Processing</button>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
