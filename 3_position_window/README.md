@@ -1,8 +1,15 @@
-# A hello world Electron app
+# Position Window
 
-This implements the electron-window-state module to save and restore the window state.
+This implements the [electron-window-state](https://github.com/mawie81/electron-window-state) module to save and restore the window state.
 
 Based of the [quick start](../1_quick_start/README.md) example.
+
+Install the module with:
+
+```bash
+# this is a production dependency
+npm install electron-window-state
+```
 
 ## main.js
 
