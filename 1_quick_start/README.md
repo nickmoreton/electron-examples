@@ -73,7 +73,6 @@ app.on('window-all-closed', function () {
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <link href="./styles.css" rel="stylesheet" />
     <title>Hello World!</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
