@@ -1,19 +1,34 @@
+<!-- 
+  This is the HTML file for the Electron quick start project.
+  It contains the basic structure of an HTML document with a title, stylesheet, and a script.
+  The content security policy is set to only allow scripts from the same origin.
+  The stylesheet is linked using the "link" tag with the "rel" attribute set to "stylesheet".
+  The main content of the page is wrapped in a container div.
+  The page displays a heading, a waving hand emoji, and an empty paragraph with the id "info".
+  The script file "renderer.js" is included at the end of the body.
+-->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
     <link href="./styles.css" rel="stylesheet">
     <title>Hello World!</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <div class="container">
-      <h1>Hello World!</h1>
-      <p>Node.js <span id="node-version"></span></p>
-      <p>Chromium <span id="chrome-version"></span></p>
-      <p>Electron <span id="electron-version"></span></p>
+      <h1>Hello from Electron renderer!</h1>
+    <p>👋</p>
+    <p id="info"></p>
     </div>
 
     <script src="./renderer.js"></script>

@@ -1,6 +1,4 @@
-/* styles.css */
-
-
+/* styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -9,8 +7,8 @@ body {
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 p {

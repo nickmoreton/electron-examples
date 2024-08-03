@@ -1,7 +1,12 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('node:path')
 
-function createWindow () {
+/**
+ * Creates a browser window and loads the index.html of the app.
+ * @function createWindow
+ * @returns {void}
+ */
+function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,
@@ -11,16 +16,15 @@ function createWindow () {
     }
   })
 
-  // and load the index.html of the app.
+
   mainWindow.loadFile('index.html')
 
-  // Open the DevTools.
+
   mainWindow.webContents.openDevTools()
 }
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
 app.whenReady().then(() => {
+  ipcMain.handle('ping', () => 'pong')
   createWindow()
 
   app.on('activate', function () {
@@ -28,9 +32,7 @@ app.whenReady().then(() => {
   })
 })
 
-// Quit when all windows are closed, except on macOS.
+
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit()
 })
-
-// Add more code here to run in the main process.
