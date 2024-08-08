@@ -1,0 +1,16 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "Minimal Electron",
+  "main": "./main/main.js",
+  "scripts": {
+    "start": "NODE_ENV=development electron .",
+    "dev": "browser-sync start --localOnly --files '**/*'"
+  },
+  "repository": "",
+  "author": "Nick Moreton",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "electron": "^31.3.1"
+  }
+}
