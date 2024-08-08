@@ -1,15 +1,3 @@
-// const information = document.getElementById('info')
-// information.innerText = `This app is using Chrome (v${window.versions.chrome()}), 
-//     Node.js (v${window.versions.node()}), 
-//     and Electron (v${window.versions.electron()})`
-
-// const func = async () => {
-//     const response = await window.versions.ping()
-//     console.log(response) // prints out 'pong'
-// }
-
-// func()
-
 console.log(development.mode()) // prints out 'development'
 
 // this calls the function to get the mode and checks if it is in development mode
