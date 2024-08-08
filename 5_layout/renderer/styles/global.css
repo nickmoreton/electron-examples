@@ -1,6 +1,8 @@
 :root {
     --dark-bg: #1D2325;
-    --light-bg: #ffffff;
+    --light-bg: #f8f8f8;
+    --white: #fff;
+    --black: #000;
 
     --primary: #0B778E;
     --primary-light: #6BD8EF;
@@ -28,6 +30,8 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-black: 900;
+    
+    color-scheme: light dark;
 }
 
 html {
@@ -66,10 +70,6 @@ ul {
 
 ul > li {
     margin-bottom: var(--spacing-half);
-}
-
-#wrapper {
-    padding: 20px;
 }
 
 h1,

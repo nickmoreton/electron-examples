@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/elements.css" />
     <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
   </head>
   <body>
-    <div id="wrapper">
+    <main>
       <input type="text" placeholder="A placeholder" /> <br />
       <br />
 
@@ -52,7 +53,23 @@
         molestiae placeat. Praesentium sit incidunt non! Eligendi, itaque culpa.
       </p>
 
-      <textarea rows="10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, adipisci provident atque beatae totam deserunt ea tempora eligendi culpa dicta ullam assumenda fuga magnam veniam recusandae ipsam praesentium optio saepe?</textarea>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+        nesciunt magni veritatis ea eaque omnis soluta placeat repudiandae,
+        laboriosam cumque rerum? Quisquam dolor illo at provident natus
+        repudiandae? Veniam, voluptatem.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
+        voluptas illo debitis vero doloremque fugit consequatur atque laboriosam
+        commodi, modi, repudiandae soluta odio eos ratione amet perspiciatis
+        iusto totam molestiae.
+      </p>
+
+      <textarea rows="10">
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, adipisci provident atque beatae totam </textarea
+      >
 
       <table>
         <thead>
@@ -78,6 +95,21 @@
             <td>Row 3, Cell 2</td>
             <td>Row 3, Cell 3</td>
           </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+          </tr>
         </tbody>
       </table>
 
@@ -87,7 +119,13 @@
       <h4>Heading 4</h4>
       <h5>Heading 5</h5>
       <h6>Heading 6</h6>
-    </div>
+    </main>
+
+    <footer>
+      <p>Current theme source: <strong id="theme-source">System</strong></p>
+      <button id="toggle-dark-mode">Toggle Dark Mode</button>
+      <button id="reset-to-system">Reset to System Theme</button>
+    </footer>
 
     <script src="scripts/renderer.js"></script>
   </body>

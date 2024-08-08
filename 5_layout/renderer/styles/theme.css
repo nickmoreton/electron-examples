@@ -1,0 +1,55 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--dark-bg);
+    color: var(--light-bg);
+  }
+  input[type="text"],
+  textarea {
+    background-color: var(--dark-bg);
+    color: var(--light-bg);
+  }
+  button,
+  input[type="submit"] {
+    background-color: var(--primary-light);
+    color: var(--dark-bg);
+    border-color: var(--primary-light);
+  }
+
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: var(--secondary-light);
+    border-color: var(--secondary-light);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--light-bg);
+  }
+
+  a:link,
+  a:visited {
+    color: var(--light-bg);
+    text-decoration: none;
+    border-bottom: 1px solid var(--light-bg);
+  }
+
+  a:hover {
+    color: var(--secondary-light);
+    border-bottom-color: var(--secondary-light);
+  }
+
+  footer {
+    background-color: var(--dark-bg);
+    color: var(--light-bg);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: var(--light-bg);
+    color: var(--dark-bg);
+  }
+}

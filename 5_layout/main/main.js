@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron')
+const { app, BrowserWindow, ipcMain, nativeTheme } = require('electron')
 const path = require('node:path')
 const mode = process.env.NODE_ENV || 'production'
 
@@ -17,10 +17,23 @@ function createWindow() {
   mainWindow.webContents.openDevTools()
 }
 
+
 app.whenReady().then(() => {
   ipcMain.handle('ping', () => 'pong')
   ipcMain.handle('mode', () => {
     return mode === 'development' ? 'development' : 'production'
+  })
+  ipcMain.handle('dark-mode:toggle', () => {
+    if (nativeTheme.shouldUseDarkColors) {
+      nativeTheme.themeSource = 'light'
+    } else {
+      nativeTheme.themeSource = 'dark'
+    }
+    return nativeTheme.shouldUseDarkColors
+  })
+  
+  ipcMain.handle('dark-mode:system', () => {
+    nativeTheme.themeSource = 'system'
   })
   createWindow()
 

@@ -5,6 +5,7 @@ textarea {
     border: 1px solid var(--primary);
     border-radius: var(--radius);
     box-shadow: var(--box-shadow);
+    background-color: var(--white);
 }
 
 button,
