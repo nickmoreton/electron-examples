@@ -1,0 +1,41 @@
+input[type=text],
+textarea {
+    width: 100%;
+    padding: var(--spacing-half);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+}
+
+button,
+input[type=submit] {
+    padding: var(--spacing-half) var(--spacing);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius);
+    background-color: var(--primary);
+    color: var(--light-bg);
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+button:hover,
+input[type=submit]:hover {
+    background-color: var(--secondary);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: var(--primary);
+    color: var(--light-bg);
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: var(--spacing-half);
+    border: 1px solid var(--primary);
+}

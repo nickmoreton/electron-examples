@@ -1,0 +1,86 @@
+:root {
+    --dark-bg: #1D2325;
+    --light-bg: #ffffff;
+
+    --primary: #0B778E;
+    --primary-light: #6BD8EF;
+    --primary-light-bg: #fff6d0;
+
+    --secondary: #417c35;
+    --secondary-light: #FDE05F;
+    --secondary-light-bg: #ecf2ed;
+
+    --highlight: #417c35;
+    --highlight-light: #6CD9BF;
+
+    --spacing: 1.6rem;
+    --spacing-half: 0.8rem;
+    --spacing-double: 3.2rem;
+
+    --radius: 4px;
+    --radius-pill: 9999px;
+
+    --box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+    --font-family-railway: "Raleway";
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family-railway);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--dark-bg);
+    background-color: var(--light-bg);
+}
+
+p {
+    margin-bottom: var(--spacing-half);
+    margin-top: var(--spacing-half);
+}
+
+a:link,
+a:visited {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary);
+}
+
+a:hover {
+    color: var(--secondary);
+    border-bottom-color: var(--secondary);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul > li {
+    margin-bottom: var(--spacing-half);
+}
+
+#wrapper {
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-railway);
+    font-weight: var(--font-weight-medium);
+    margin: var(--spacing-half) 0;
+    margin-bottom: var(--spacing-half);
+    color: var(--primary);
+}
