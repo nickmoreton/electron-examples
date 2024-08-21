@@ -4,3 +4,4 @@
 2. [Open a folder chooser](./2_open_a_folder_chooser/)
 3. [Position Window](./3_position_window/)
 4. [Reload](./4_reload/)
+5. [Alternate Structure](./5_alternate_structure/)
