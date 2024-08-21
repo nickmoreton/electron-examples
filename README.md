@@ -5,3 +5,4 @@
 3. [Position Window](./3_position_window/)
 4. [Reload](./4_reload/)
 5. [Alternate Structure](./5_alternate_structure/)
+6. [Introducing Vite](./6_introduce_vite/)
