@@ -1,0 +1,17 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "Minimal Electron",
+  "main": "./out/main/main.js",
+  "scripts": {
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev -w",
+    "prebuild": "electron-vite build"
+  },
+  "repository": "",
+  "author": "Nick Moreton",
+  "devDependencies": {
+    "electron": "^31.0.2",
+    "electron-vite": "^2.3.0"
+  }
+}
