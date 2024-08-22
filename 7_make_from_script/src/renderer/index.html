@@ -13,20 +13,25 @@
   </head>
 
   <body>
-    <div id="app">
+    <div id="app" class="container-fluid">
       <img alt="logo" class="logo" src="./assets/electron.svg" />
-      <div class="creator">Powered by electron-vite</div>
+      <hgroup>
+        <h2>Powered by electron-vite</h2>
+        <p>Build an Electron app with
+          <mark class="">JavaScript</mark></p>
+      </hgroup>
+      <!-- <div class="creator">Powered by electron-vite</div>
       <div class="text">
         Build an Electron app with
         <span class="js">JavaScript</span>
-      </div>
+      </div> -->
       <p class="tip">Please try pressing <code>F12</code> to open the devTool</p>
       <div class="actions">
         <div class="action">
           <a href="https://electron-vite.org/" target="_blank" rel="noreferrer">Documentation</a>
         </div>
         <div class="action">
-          <a id="ipcHandler" target="_blank" rel="noreferrer">Send IPC</a>
+          <button id="ipcHandler" target="_blank" rel="noreferrer">Send IPC</button>
         </div>
       </div>
 
