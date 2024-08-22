@@ -1,0 +1,30 @@
+body {
+  background-image: url('../assets/wavy-lines.svg');
+  background-size: cover;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // margin-bottom: 80px;
+  height: 100vh;
+}
+.logo {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 20px;
+}
+
+.action {
+  margin-bottom: 20px;
+}
+
+.versions {
+  display: flex;
+  li {
+    list-style: none;
+    margin: 0 10px;
+  }
+}
