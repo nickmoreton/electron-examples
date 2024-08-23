@@ -9,3 +9,7 @@
 7. [Adding SASS Support](./7_add-sass-to-vite/)
 8. [Make App from Vite command](./8_make_from_script/)
 9. [Web Components](./9_components/)
+10. [Vite Javascript Template](./vite_javascript/)
+11. [Vite Typescript Template](./vite_typescript/)
+12. [Webpack Javascript Template](./webpack_javascript/)
+13. [Webpack Typescript Template](./webpack_typescript/)
