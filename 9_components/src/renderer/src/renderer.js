@@ -1,6 +1,9 @@
+import IpcButton from './components/IpcButton'
+
 function init() {
   window.addEventListener('DOMContentLoaded', () => {
     doAThing()
+    customElements.define('ipc-button', IpcButton)
   })
 }
 
@@ -10,6 +13,9 @@ function doAThing() {
   replaceText('.chrome-version', `Chromium v${versions.chrome}`)
   replaceText('.node-version', `Node v${versions.node}`)
 
+  // I didn't know ...
+  // the ? after ipcHandlerBtn will prevent calling
+  // addEventListener if ipcHandlerBtn is null
   const ipcHandlerBtn = document.getElementById('ipcHandler')
   ipcHandlerBtn?.addEventListener('click', () => {
     window.electron.ipcRenderer.send('ping')

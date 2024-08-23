@@ -20,17 +20,14 @@
         <p>Build an Electron app with
           <mark class="">JavaScript</mark></p>
       </hgroup>
-      <!-- <div class="creator">Powered by electron-vite</div>
-      <div class="text">
-        Build an Electron app with
-        <span class="js">JavaScript</span>
-      </div> -->
       <p class="tip">Please try pressing <code>F12</code> to open the devTool</p>
       <div class="actions">
         <div class="action">
           <a href="https://electron-vite.org/" target="_blank" rel="noreferrer">Documentation</a>
         </div>
         <div class="action">
+          <!-- Demostrate using a custom button that can have a class and callback set -->
+          <ipc-button className="contrast" callbackName="ping">Send IPC custom</ipc-button>
           <button id="ipcHandler" target="_blank" rel="noreferrer">Send IPC</button>
         </div>
       </div>
