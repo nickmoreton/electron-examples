@@ -6,3 +6,6 @@
 4. [Reload](./4_reload/)
 5. [Alternate Structure](./5_alternate_structure/)
 6. [Introducing Vite](./6_introduce_vite/)
+7. [Adding SASS Support](./7_add-sass-to-vite/)
+8. [Make App from Vite command](./8_make_from_script/)
+9. [Web Components](./9_components/)

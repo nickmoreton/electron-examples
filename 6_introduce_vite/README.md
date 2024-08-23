@@ -1,4 +1,4 @@
-# A hello world Electron app using electron-vite
+# Introduce electron-vite
 
 This is a pretty basic Electron app that displays a window with a greeting and some information about the versions of Chrome, Node.js, and Electron that it is using. The app also logs a message to the console when it is run.
 

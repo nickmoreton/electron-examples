@@ -1,4 +1,4 @@
-# A hello world Electron app
+# Reloading the app with browser-sync
 
 This example show how to include browser-sync for live reloading of the app.
 
